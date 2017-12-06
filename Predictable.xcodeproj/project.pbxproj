@@ -10,6 +10,7 @@
 		C81FEDBA1FD8490700BA6B97 /* Predictable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81FEDB01FD8490700BA6B97 /* Predictable.framework */; };
 		C81FEDBF1FD8490700BA6B97 /* PredictableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C81FEDBE1FD8490700BA6B97 /* PredictableTests.m */; };
 		C81FEDC11FD8490700BA6B97 /* Predictable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81FEDB31FD8490700BA6B97 /* Predictable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81FEDCB1FD8493C00BA6B97 /* OPPredictable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		C81FEDB91FD8490700BA6B97 /* PredictableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredictableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81FEDBE1FD8490700BA6B97 /* PredictableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PredictableTests.m; sourceTree = "<group>"; };
 		C81FEDC01FD8490700BA6B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPPredictable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C81FEDB31FD8490700BA6B97 /* Predictable.h */,
+				C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */,
 				C81FEDB41FD8490700BA6B97 /* Info.plist */,
 			);
 			path = Predictable;
@@ -94,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81FEDC11FD8490700BA6B97 /* Predictable.h in Headers */,
+				C81FEDCB1FD8493C00BA6B97 /* OPPredictable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +146,7 @@
 		C81FEDA71FD8490700BA6B97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OP;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Off-Piste";
 				TargetAttributes = {
