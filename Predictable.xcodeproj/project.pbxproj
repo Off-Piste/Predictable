@@ -3,432 +3,1842 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"Predictable::PredictablePackageTests::ProductTarget" /* PredictablePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_256 /* Build configuration list for PBXAggregateTarget "PredictablePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_259 /* PBXTargetDependency */,
+			);
+			name = PredictablePackageTests;
+			productName = PredictablePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		C81FEDBA1FD8490700BA6B97 /* Predictable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81FEDB01FD8490700BA6B97 /* Predictable.framework */; };
-		C81FEDBF1FD8490700BA6B97 /* PredictableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C81FEDBE1FD8490700BA6B97 /* PredictableTests.m */; };
-		C81FEDC11FD8490700BA6B97 /* Predictable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81FEDB31FD8490700BA6B97 /* Predictable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C81FEDCB1FD8493C00BA6B97 /* OPPredictable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8A8BFEE1FD9517000AA8A56 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8BFED1FD9517000AA8A56 /* Operator.swift */; };
+		C8A8BFF01FD952F400AA8A56 /* Array+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8BFEF1FD952F400AA8A56 /* Array+Predicate.swift */; };
+		C8A8BFF21FD956BF00AA8A56 /* PredictableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8BFF11FD956BF00AA8A56 /* PredictableError.swift */; };
+		OBJ_100 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Package.swift */; };
+		OBJ_106 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Package.swift */; };
+		OBJ_112 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Package.swift */; };
+		OBJ_118 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Package.swift */; };
+		OBJ_124 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Package.swift */; };
+		OBJ_130 /* PredictableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PredictableTests.swift */; };
+		OBJ_132 /* Predictable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Predictable::Predictable::Product" /* Predictable.framework */; };
+		OBJ_133 /* SwiftyCouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyCouchDB::SwiftyCouchDB::Product" /* SwiftyCouchDB.framework */; };
+		OBJ_134 /* CodableCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CodableCollection::CodableCollection::Product" /* CodableCollection.framework */; };
+		OBJ_135 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_136 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_137 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
+		OBJ_138 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_157 /* Predictable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Predictable.swift */; };
+		OBJ_158 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Query.swift */; };
+		OBJ_160 /* SwiftyCouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyCouchDB::SwiftyCouchDB::Product" /* SwiftyCouchDB.framework */; };
+		OBJ_161 /* CodableCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CodableCollection::CodableCollection::Product" /* CodableCollection.framework */; };
+		OBJ_162 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_163 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_164 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
+		OBJ_165 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_176 /* CodableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* CodableUtils.swift */; };
+		OBJ_177 /* CouchDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* CouchDB.swift */; };
+		OBJ_178 /* DBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* DBConfiguration.swift */; };
+		OBJ_179 /* DBDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DBDocument.swift */; };
+		OBJ_180 /* DBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DBError.swift */; };
+		OBJ_181 /* DBObjectChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* DBObjectChanges.swift */; };
+		OBJ_182 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Database.swift */; };
+		OBJ_183 /* CouchDB+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* CouchDB+Alamofire.swift */; };
+		OBJ_184 /* CouchDBRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* CouchDBRequests.swift */; };
+		OBJ_185 /* JSON+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* JSON+Codable.swift */; };
+		OBJ_186 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* String+Regex.swift */; };
+		OBJ_187 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Apply.swift */; };
+		OBJ_188 /* BasicPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* BasicPromise.swift */; };
+		OBJ_189 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Promise.swift */; };
+		OBJ_190 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Result.swift */; };
+		OBJ_192 /* CodableCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CodableCollection::CodableCollection::Product" /* CodableCollection.framework */; };
+		OBJ_193 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_194 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_195 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
+		OBJ_196 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_206 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* AnyCodable.swift */; };
+		OBJ_207 /* CodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* CodableArray.swift */; };
+		OBJ_208 /* CodableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* CodableDictionary.swift */; };
+		OBJ_209 /* UnkeyedCodableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UnkeyedCodableDictionary.swift */; };
+		OBJ_215 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* LclJSONSerialization.swift */; };
+		OBJ_216 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* SwiftyJSON.swift */; };
+		OBJ_222 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* AFError.swift */; };
+		OBJ_223 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Alamofire.swift */; };
+		OBJ_224 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_225 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* MultipartFormData.swift */; };
+		OBJ_226 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* NetworkReachabilityManager.swift */; };
+		OBJ_227 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Notifications.swift */; };
+		OBJ_228 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ParameterEncoding.swift */; };
+		OBJ_229 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Request.swift */; };
+		OBJ_230 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Response.swift */; };
+		OBJ_231 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ResponseSerialization.swift */; };
+		OBJ_232 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Result.swift */; };
+		OBJ_233 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* ServerTrustPolicy.swift */; };
+		OBJ_234 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* SessionDelegate.swift */; };
+		OBJ_235 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* SessionManager.swift */; };
+		OBJ_236 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* TaskDelegate.swift */; };
+		OBJ_237 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Timeline.swift */; };
+		OBJ_238 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Validation.swift */; };
+		OBJ_244 /* HeliumLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* HeliumLogger.swift */; };
+		OBJ_245 /* HeliumStreamLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* HeliumStreamLogger.swift */; };
+		OBJ_247 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_253 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Logger.swift */; };
+		OBJ_88 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_94 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C81FEDBB1FD8490700BA6B97 /* PBXContainerItemProxy */ = {
+		C8A8BFD91FD946E000AA8A56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C81FEDA71FD8490700BA6B97 /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C81FEDAF1FD8490700BA6B97;
+			remoteGlobalIDString = "SwiftyCouchDB::SwiftyCouchDB";
+			remoteInfo = SwiftyCouchDB;
+		};
+		C8A8BFDA1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CodableCollection::CodableCollection";
+			remoteInfo = CodableCollection;
+		};
+		C8A8BFDB1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		C8A8BFDC1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		C8A8BFDD1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
+			remoteInfo = HeliumLogger;
+		};
+		C8A8BFDE1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		C8A8BFDF1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		C8A8BFE01FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CodableCollection::CodableCollection";
+			remoteInfo = CodableCollection;
+		};
+		C8A8BFE11FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		C8A8BFE21FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		C8A8BFE31FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
+			remoteInfo = HeliumLogger;
+		};
+		C8A8BFE41FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		C8A8BFE51FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Predictable::Predictable";
 			remoteInfo = Predictable;
+		};
+		C8A8BFE61FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyCouchDB::SwiftyCouchDB";
+			remoteInfo = SwiftyCouchDB;
+		};
+		C8A8BFE71FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CodableCollection::CodableCollection";
+			remoteInfo = CodableCollection;
+		};
+		C8A8BFE81FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		C8A8BFE91FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		C8A8BFEA1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
+			remoteInfo = HeliumLogger;
+		};
+		C8A8BFEB1FD946E000AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		C8A8BFEC1FD946E100AA8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Predictable::PredictableTests";
+			remoteInfo = PredictableTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C81FEDB01FD8490700BA6B97 /* Predictable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Predictable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C81FEDB31FD8490700BA6B97 /* Predictable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Predictable.h; sourceTree = "<group>"; };
-		C81FEDB41FD8490700BA6B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C81FEDB91FD8490700BA6B97 /* PredictableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredictableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C81FEDBE1FD8490700BA6B97 /* PredictableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PredictableTests.m; sourceTree = "<group>"; };
-		C81FEDC01FD8490700BA6B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPPredictable.h; sourceTree = "<group>"; };
+		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A8BFED1FD9517000AA8A56 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		C8A8BFEF1FD952F400AA8A56 /* Array+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Predicate.swift"; sourceTree = "<group>"; };
+		C8A8BFF11FD956BF00AA8A56 /* PredictableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictableError.swift; sourceTree = "<group>"; };
+		"CodableCollection::CodableCollection::Product" /* CodableCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CodableCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoggerAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		OBJ_13 /* PredictableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictableTests.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/SwiftyCouchDB.git--2451049688780335323/Package.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* CodableUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableUtils.swift; sourceTree = "<group>"; };
+		OBJ_18 /* CouchDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchDB.swift; sourceTree = "<group>"; };
+		OBJ_19 /* DBConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_20 /* DBDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBDocument.swift; sourceTree = "<group>"; };
+		OBJ_21 /* DBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBError.swift; sourceTree = "<group>"; };
+		OBJ_22 /* DBObjectChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBObjectChanges.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		OBJ_25 /* CouchDB+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CouchDB+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* CouchDBRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchDBRequests.swift; sourceTree = "<group>"; };
+		OBJ_27 /* JSON+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Codable.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
+		OBJ_31 /* BasicPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPromise.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_36 /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		OBJ_37 /* CodableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableArray.swift; sourceTree = "<group>"; };
+		OBJ_38 /* CodableDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDictionary.swift; sourceTree = "<group>"; };
+		OBJ_39 /* UnkeyedCodableDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnkeyedCodableDictionary.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/CodableCollection.git--5931611610300298364/Package.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
+		OBJ_44 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/SwiftyJSON.git--6955445084174387031/Package.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/Alamofire.git-6801331143877184500/Package.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_50 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_52 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_56 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_57 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_59 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_61 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_62 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_63 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_67 /* HeliumLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliumLogger.swift; sourceTree = "<group>"; };
+		OBJ_68 /* HeliumStreamLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliumStreamLogger.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/HeliumLogger.git-2106793442615829935/Package.swift"; sourceTree = "<group>"; };
+		OBJ_72 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/harrywright/Frameworks/Off Piste/Cocoapod/Predictable/.build/checkouts/LoggerAPI.git--6449715459278086880/Package.swift"; sourceTree = "<group>"; };
+		OBJ_9 /* Predictable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictable.swift; sourceTree = "<group>"; };
+		"Predictable::Predictable::Product" /* Predictable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Predictable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Predictable::PredictableTests::Product" /* PredictableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PredictableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyCouchDB::SwiftyCouchDB::Product" /* SwiftyCouchDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyCouchDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C81FEDAC1FD8490700BA6B97 /* Frameworks */ = {
+		OBJ_131 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
+			files = (
+				OBJ_132 /* Predictable.framework in Frameworks */,
+				OBJ_133 /* SwiftyCouchDB.framework in Frameworks */,
+				OBJ_134 /* CodableCollection.framework in Frameworks */,
+				OBJ_135 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_136 /* Alamofire.framework in Frameworks */,
+				OBJ_137 /* HeliumLogger.framework in Frameworks */,
+				OBJ_138 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_160 /* SwiftyCouchDB.framework in Frameworks */,
+				OBJ_161 /* CodableCollection.framework in Frameworks */,
+				OBJ_162 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_163 /* Alamofire.framework in Frameworks */,
+				OBJ_164 /* HeliumLogger.framework in Frameworks */,
+				OBJ_165 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_192 /* CodableCollection.framework in Frameworks */,
+				OBJ_193 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_194 /* Alamofire.framework in Frameworks */,
+				OBJ_195 /* HeliumLogger.framework in Frameworks */,
+				OBJ_196 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C81FEDB61FD8490700BA6B97 /* Frameworks */ = {
+		OBJ_217 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				C81FEDBA1FD8490700BA6B97 /* Predictable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_247 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C81FEDA61FD8490700BA6B97 = {
+		OBJ_11 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C81FEDB21FD8490700BA6B97 /* Predictable */,
-				C81FEDBD1FD8490700BA6B97 /* PredictableTests */,
-				C81FEDB11FD8490700BA6B97 /* Products */,
+				OBJ_12 /* PredictableTests */,
 			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_12 /* PredictableTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* PredictableTests.swift */,
+			);
+			name = PredictableTests;
+			path = Tests/PredictableTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* SwiftyCouchDB */,
+				OBJ_34 /* CodableCollection */,
+				OBJ_41 /* SwiftyJSON 17.0.0 */,
+				OBJ_46 /* Alamofire 4.5.1 */,
+				OBJ_65 /* HeliumLogger 1.7.1 */,
+				OBJ_70 /* LoggerAPI 1.7.1 */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		C81FEDB11FD8490700BA6B97 /* Products */ = {
+		OBJ_15 /* SwiftyCouchDB */ = {
 			isa = PBXGroup;
 			children = (
-				C81FEDB01FD8490700BA6B97 /* Predictable.framework */,
-				C81FEDB91FD8490700BA6B97 /* PredictableTests.xctest */,
+				OBJ_16 /* Package.swift */,
+				OBJ_17 /* CodableUtils.swift */,
+				OBJ_18 /* CouchDB.swift */,
+				OBJ_19 /* DBConfiguration.swift */,
+				OBJ_20 /* DBDocument.swift */,
+				OBJ_21 /* DBError.swift */,
+				OBJ_22 /* DBObjectChanges.swift */,
+				OBJ_23 /* Database.swift */,
+				OBJ_24 /* Internal */,
+				OBJ_29 /* MiniPromiseKit */,
+			);
+			name = SwiftyCouchDB;
+			path = ".build/checkouts/SwiftyCouchDB.git--2451049688780335323/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* CouchDB+Alamofire.swift */,
+				OBJ_26 /* CouchDBRequests.swift */,
+				OBJ_27 /* JSON+Codable.swift */,
+				OBJ_28 /* String+Regex.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* MiniPromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* Apply.swift */,
+				OBJ_31 /* BasicPromise.swift */,
+				OBJ_32 /* Promise.swift */,
+				OBJ_33 /* Result.swift */,
+			);
+			path = MiniPromiseKit;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* CodableCollection */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* CodableCollection */,
+				OBJ_40 /* Package.swift */,
+			);
+			name = CodableCollection;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* CodableCollection */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* AnyCodable.swift */,
+				OBJ_37 /* CodableArray.swift */,
+				OBJ_38 /* CodableDictionary.swift */,
+				OBJ_39 /* UnkeyedCodableDictionary.swift */,
+			);
+			name = CodableCollection;
+			path = ".build/checkouts/CodableCollection.git--5931611610300298364/Sources/CodableCollection";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* SwiftyJSON 17.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* SwiftyJSON */,
+				OBJ_45 /* Package.swift */,
+			);
+			name = "SwiftyJSON 17.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_42 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* LclJSONSerialization.swift */,
+				OBJ_44 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			path = ".build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_46 /* Alamofire 4.5.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* Package.swift */,
+				OBJ_48 /* AFError.swift */,
+				OBJ_49 /* Alamofire.swift */,
+				OBJ_50 /* DispatchQueue+Alamofire.swift */,
+				OBJ_51 /* MultipartFormData.swift */,
+				OBJ_52 /* NetworkReachabilityManager.swift */,
+				OBJ_53 /* Notifications.swift */,
+				OBJ_54 /* ParameterEncoding.swift */,
+				OBJ_55 /* Request.swift */,
+				OBJ_56 /* Response.swift */,
+				OBJ_57 /* ResponseSerialization.swift */,
+				OBJ_58 /* Result.swift */,
+				OBJ_59 /* ServerTrustPolicy.swift */,
+				OBJ_60 /* SessionDelegate.swift */,
+				OBJ_61 /* SessionManager.swift */,
+				OBJ_62 /* TaskDelegate.swift */,
+				OBJ_63 /* Timeline.swift */,
+				OBJ_64 /* Validation.swift */,
+			);
+			name = "Alamofire 4.5.1";
+			path = ".build/checkouts/Alamofire.git-6801331143877184500/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_11 /* Tests */,
+				OBJ_14 /* Dependencies */,
+				OBJ_74 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_65 /* HeliumLogger 1.7.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_66 /* HeliumLogger */,
+				OBJ_69 /* Package.swift */,
+			);
+			name = "HeliumLogger 1.7.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_66 /* HeliumLogger */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* HeliumLogger.swift */,
+				OBJ_68 /* HeliumStreamLogger.swift */,
+			);
+			name = HeliumLogger;
+			path = ".build/checkouts/HeliumLogger.git-2106793442615829935/Sources/HeliumLogger";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Predictable */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* LoggerAPI 1.7.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* LoggerAPI */,
+				OBJ_73 /* Package.swift */,
+			);
+			name = "LoggerAPI 1.7.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_71 /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_72 /* Logger.swift */,
+			);
+			name = LoggerAPI;
+			path = ".build/checkouts/LoggerAPI.git--6449715459278086880/Sources/LoggerAPI";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Predictable::PredictableTests::Product" /* PredictableTests.xctest */,
+				"Predictable::Predictable::Product" /* Predictable.framework */,
+				"SwiftyCouchDB::SwiftyCouchDB::Product" /* SwiftyCouchDB.framework */,
+				"CodableCollection::CodableCollection::Product" /* CodableCollection.framework */,
+				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */,
+				"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C81FEDB21FD8490700BA6B97 /* Predictable */ = {
+		OBJ_8 /* Predictable */ = {
 			isa = PBXGroup;
 			children = (
-				C81FEDB31FD8490700BA6B97 /* Predictable.h */,
-				C81FEDCA1FD8493B00BA6B97 /* OPPredictable.h */,
-				C81FEDB41FD8490700BA6B97 /* Info.plist */,
+				OBJ_9 /* Predictable.swift */,
+				C8A8BFF11FD956BF00AA8A56 /* PredictableError.swift */,
+				C8A8BFED1FD9517000AA8A56 /* Operator.swift */,
+				OBJ_10 /* Query.swift */,
+				C8A8BFEF1FD952F400AA8A56 /* Array+Predicate.swift */,
 			);
-			path = Predictable;
-			sourceTree = "<group>";
-		};
-		C81FEDBD1FD8490700BA6B97 /* PredictableTests */ = {
-			isa = PBXGroup;
-			children = (
-				C81FEDBE1FD8490700BA6B97 /* PredictableTests.m */,
-				C81FEDC01FD8490700BA6B97 /* Info.plist */,
-			);
-			path = PredictableTests;
-			sourceTree = "<group>";
+			name = Predictable;
+			path = Sources/Predictable;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C81FEDAD1FD8490700BA6B97 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C81FEDC11FD8490700BA6B97 /* Predictable.h in Headers */,
-				C81FEDCB1FD8493C00BA6B97 /* OPPredictable.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		C81FEDAF1FD8490700BA6B97 /* Predictable */ = {
+		"Alamofire::Alamofire" /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81FEDC41FD8490700BA6B97 /* Build configuration list for PBXNativeTarget "Predictable" */;
+			buildConfigurationList = OBJ_218 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				C81FEDAB1FD8490700BA6B97 /* Sources */,
-				C81FEDAC1FD8490700BA6B97 /* Frameworks */,
-				C81FEDAD1FD8490700BA6B97 /* Headers */,
-				C81FEDAE1FD8490700BA6B97 /* Resources */,
+				OBJ_221 /* Sources */,
+				OBJ_239 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_108 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildPhases = (
+				OBJ_111 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofirePackageDescription;
+			productName = AlamofirePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"CodableCollection::CodableCollection" /* CodableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_202 /* Build configuration list for PBXNativeTarget "CodableCollection" */;
+			buildPhases = (
+				OBJ_205 /* Sources */,
+				OBJ_210 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodableCollection;
+			productName = CodableCollection;
+			productReference = "CodableCollection::CodableCollection::Product" /* CodableCollection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"CodableCollection::SwiftPMPackageDescription" /* CodableCollectionPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_96 /* Build configuration list for PBXNativeTarget "CodableCollectionPackageDescription" */;
+			buildPhases = (
+				OBJ_99 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodableCollectionPackageDescription;
+			productName = CodableCollectionPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"HeliumLogger::HeliumLogger" /* HeliumLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_240 /* Build configuration list for PBXNativeTarget "HeliumLogger" */;
+			buildPhases = (
+				OBJ_243 /* Sources */,
+				OBJ_246 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_248 /* PBXTargetDependency */,
+			);
+			name = HeliumLogger;
+			productName = HeliumLogger;
+			productReference = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"HeliumLogger::SwiftPMPackageDescription" /* HeliumLoggerPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_114 /* Build configuration list for PBXNativeTarget "HeliumLoggerPackageDescription" */;
+			buildPhases = (
+				OBJ_117 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeliumLoggerPackageDescription;
+			productName = HeliumLoggerPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"LoggerAPI::LoggerAPI" /* LoggerAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_249 /* Build configuration list for PBXNativeTarget "LoggerAPI" */;
+			buildPhases = (
+				OBJ_252 /* Sources */,
+				OBJ_254 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerAPI;
+			productName = LoggerAPI;
+			productReference = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_120 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */;
+			buildPhases = (
+				OBJ_123 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerAPIPackageDescription;
+			productName = LoggerAPIPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Predictable::Predictable" /* Predictable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_153 /* Build configuration list for PBXNativeTarget "Predictable" */;
+			buildPhases = (
+				OBJ_156 /* Sources */,
+				OBJ_159 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_166 /* PBXTargetDependency */,
+				OBJ_167 /* PBXTargetDependency */,
+				OBJ_168 /* PBXTargetDependency */,
+				OBJ_169 /* PBXTargetDependency */,
+				OBJ_170 /* PBXTargetDependency */,
+				OBJ_171 /* PBXTargetDependency */,
 			);
 			name = Predictable;
 			productName = Predictable;
-			productReference = C81FEDB01FD8490700BA6B97 /* Predictable.framework */;
+			productReference = "Predictable::Predictable::Product" /* Predictable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C81FEDB81FD8490700BA6B97 /* PredictableTests */ = {
+		"Predictable::PredictableTests" /* PredictableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81FEDC71FD8490700BA6B97 /* Build configuration list for PBXNativeTarget "PredictableTests" */;
+			buildConfigurationList = OBJ_126 /* Build configuration list for PBXNativeTarget "PredictableTests" */;
 			buildPhases = (
-				C81FEDB51FD8490700BA6B97 /* Sources */,
-				C81FEDB61FD8490700BA6B97 /* Frameworks */,
-				C81FEDB71FD8490700BA6B97 /* Resources */,
+				OBJ_129 /* Sources */,
+				OBJ_131 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C81FEDBC1FD8490700BA6B97 /* PBXTargetDependency */,
+				OBJ_139 /* PBXTargetDependency */,
+				OBJ_141 /* PBXTargetDependency */,
+				OBJ_143 /* PBXTargetDependency */,
+				OBJ_145 /* PBXTargetDependency */,
+				OBJ_147 /* PBXTargetDependency */,
+				OBJ_149 /* PBXTargetDependency */,
+				OBJ_151 /* PBXTargetDependency */,
 			);
 			name = PredictableTests;
 			productName = PredictableTests;
-			productReference = C81FEDB91FD8490700BA6B97 /* PredictableTests.xctest */;
+			productReference = "Predictable::PredictableTests::Product" /* PredictableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Predictable::SwiftPMPackageDescription" /* PredictablePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_84 /* Build configuration list for PBXNativeTarget "PredictablePackageDescription" */;
+			buildPhases = (
+				OBJ_87 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PredictablePackageDescription;
+			productName = PredictablePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyCouchDB::SwiftPMPackageDescription" /* SwiftyCouchDBPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_90 /* Build configuration list for PBXNativeTarget "SwiftyCouchDBPackageDescription" */;
+			buildPhases = (
+				OBJ_93 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyCouchDBPackageDescription;
+			productName = SwiftyCouchDBPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyCouchDB::SwiftyCouchDB" /* SwiftyCouchDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_172 /* Build configuration list for PBXNativeTarget "SwiftyCouchDB" */;
+			buildPhases = (
+				OBJ_175 /* Sources */,
+				OBJ_191 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_197 /* PBXTargetDependency */,
+				OBJ_198 /* PBXTargetDependency */,
+				OBJ_199 /* PBXTargetDependency */,
+				OBJ_200 /* PBXTargetDependency */,
+				OBJ_201 /* PBXTargetDependency */,
+			);
+			name = SwiftyCouchDB;
+			productName = SwiftyCouchDB;
+			productReference = "SwiftyCouchDB::SwiftyCouchDB::Product" /* SwiftyCouchDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
+			buildPhases = (
+				OBJ_105 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSONPackageDescription;
+			productName = SwiftyJSONPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_211 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				OBJ_214 /* Sources */,
+				OBJ_217 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C81FEDA71FD8490700BA6B97 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = OP;
-				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "Off-Piste";
-				TargetAttributes = {
-					C81FEDAF1FD8490700BA6B97 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					C81FEDB81FD8490700BA6B97 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = C81FEDAA1FD8490700BA6B97 /* Build configuration list for PBXProject "Predictable" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Predictable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C81FEDA61FD8490700BA6B97;
-			productRefGroup = C81FEDB11FD8490700BA6B97 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C81FEDAF1FD8490700BA6B97 /* Predictable */,
-				C81FEDB81FD8490700BA6B97 /* PredictableTests */,
+				"Predictable::SwiftPMPackageDescription" /* PredictablePackageDescription */,
+				"SwiftyCouchDB::SwiftPMPackageDescription" /* SwiftyCouchDBPackageDescription */,
+				"CodableCollection::SwiftPMPackageDescription" /* CodableCollectionPackageDescription */,
+				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
+				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
+				"HeliumLogger::SwiftPMPackageDescription" /* HeliumLoggerPackageDescription */,
+				"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */,
+				"Predictable::PredictableTests" /* PredictableTests */,
+				"Predictable::Predictable" /* Predictable */,
+				"SwiftyCouchDB::SwiftyCouchDB" /* SwiftyCouchDB */,
+				"CodableCollection::CodableCollection" /* CodableCollection */,
+				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
+				"Alamofire::Alamofire" /* Alamofire */,
+				"HeliumLogger::HeliumLogger" /* HeliumLogger */,
+				"LoggerAPI::LoggerAPI" /* LoggerAPI */,
+				"Predictable::PredictablePackageTests::ProductTarget" /* PredictablePackageTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		C81FEDAE1FD8490700BA6B97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C81FEDB71FD8490700BA6B97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		C81FEDAB1FD8490700BA6B97 /* Sources */ = {
+		OBJ_105 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
+				OBJ_106 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C81FEDB51FD8490700BA6B97 /* Sources */ = {
+		OBJ_111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				C81FEDBF1FD8490700BA6B97 /* PredictableTests.m in Sources */,
+				OBJ_112 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_118 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_124 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_130 /* PredictableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_157 /* Predictable.swift in Sources */,
+				C8A8BFEE1FD9517000AA8A56 /* Operator.swift in Sources */,
+				OBJ_158 /* Query.swift in Sources */,
+				C8A8BFF01FD952F400AA8A56 /* Array+Predicate.swift in Sources */,
+				C8A8BFF21FD956BF00AA8A56 /* PredictableError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_176 /* CodableUtils.swift in Sources */,
+				OBJ_177 /* CouchDB.swift in Sources */,
+				OBJ_178 /* DBConfiguration.swift in Sources */,
+				OBJ_179 /* DBDocument.swift in Sources */,
+				OBJ_180 /* DBError.swift in Sources */,
+				OBJ_181 /* DBObjectChanges.swift in Sources */,
+				OBJ_182 /* Database.swift in Sources */,
+				OBJ_183 /* CouchDB+Alamofire.swift in Sources */,
+				OBJ_184 /* CouchDBRequests.swift in Sources */,
+				OBJ_185 /* JSON+Codable.swift in Sources */,
+				OBJ_186 /* String+Regex.swift in Sources */,
+				OBJ_187 /* Apply.swift in Sources */,
+				OBJ_188 /* BasicPromise.swift in Sources */,
+				OBJ_189 /* Promise.swift in Sources */,
+				OBJ_190 /* Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_206 /* AnyCodable.swift in Sources */,
+				OBJ_207 /* CodableArray.swift in Sources */,
+				OBJ_208 /* CodableDictionary.swift in Sources */,
+				OBJ_209 /* UnkeyedCodableDictionary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_215 /* LclJSONSerialization.swift in Sources */,
+				OBJ_216 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_222 /* AFError.swift in Sources */,
+				OBJ_223 /* Alamofire.swift in Sources */,
+				OBJ_224 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_225 /* MultipartFormData.swift in Sources */,
+				OBJ_226 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_227 /* Notifications.swift in Sources */,
+				OBJ_228 /* ParameterEncoding.swift in Sources */,
+				OBJ_229 /* Request.swift in Sources */,
+				OBJ_230 /* Response.swift in Sources */,
+				OBJ_231 /* ResponseSerialization.swift in Sources */,
+				OBJ_232 /* Result.swift in Sources */,
+				OBJ_233 /* ServerTrustPolicy.swift in Sources */,
+				OBJ_234 /* SessionDelegate.swift in Sources */,
+				OBJ_235 /* SessionManager.swift in Sources */,
+				OBJ_236 /* TaskDelegate.swift in Sources */,
+				OBJ_237 /* Timeline.swift in Sources */,
+				OBJ_238 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_244 /* HeliumLogger.swift in Sources */,
+				OBJ_245 /* HeliumStreamLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_253 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_88 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_94 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_100 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C81FEDBC1FD8490700BA6B97 /* PBXTargetDependency */ = {
+		OBJ_139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C81FEDAF1FD8490700BA6B97 /* Predictable */;
-			targetProxy = C81FEDBB1FD8490700BA6B97 /* PBXContainerItemProxy */;
+			target = "Predictable::Predictable" /* Predictable */;
+			targetProxy = C8A8BFE51FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyCouchDB::SwiftyCouchDB" /* SwiftyCouchDB */;
+			targetProxy = C8A8BFE61FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CodableCollection::CodableCollection" /* CodableCollection */;
+			targetProxy = C8A8BFE71FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = C8A8BFE81FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = C8A8BFE91FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
+			targetProxy = C8A8BFEA1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = C8A8BFEB1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyCouchDB::SwiftyCouchDB" /* SwiftyCouchDB */;
+			targetProxy = C8A8BFD91FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CodableCollection::CodableCollection" /* CodableCollection */;
+			targetProxy = C8A8BFE01FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = C8A8BFE11FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = C8A8BFE21FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
+			targetProxy = C8A8BFE31FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = C8A8BFE41FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CodableCollection::CodableCollection" /* CodableCollection */;
+			targetProxy = C8A8BFDA1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = C8A8BFDB1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = C8A8BFDC1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
+			targetProxy = C8A8BFDD1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = C8A8BFDF1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = C8A8BFDE1FD946E000AA8A56 /* PBXContainerItemProxy */;
+		};
+		OBJ_259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Predictable::PredictableTests" /* PredictableTests */;
+			targetProxy = C8A8BFEC1FD946E100AA8A56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C81FEDC21FD8490700BA6B97 /* Debug */ = {
+		OBJ_103 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/PredictableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = PredictableTests;
 			};
 			name = Debug;
 		};
-		C81FEDC31FD8490700BA6B97 /* Release */ = {
+		OBJ_128 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/PredictableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = PredictableTests;
+			};
+			name = Release;
+		};
+		OBJ_154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/Predictable_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Predictable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Predictable;
+			};
+			name = Debug;
+		};
+		OBJ_155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/Predictable_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Predictable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Predictable;
+			};
+			name = Release;
+		};
+		OBJ_173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/SwiftyCouchDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyCouchDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyCouchDB;
+			};
+			name = Debug;
+		};
+		OBJ_174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/SwiftyCouchDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyCouchDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyCouchDB;
+			};
+			name = Release;
+		};
+		OBJ_203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/CodableCollection_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CodableCollection;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = CodableCollection;
+			};
+			name = Debug;
+		};
+		OBJ_204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/CodableCollection_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CodableCollection;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = CodableCollection;
+			};
+			name = Release;
+		};
+		OBJ_212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Debug;
+		};
+		OBJ_213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Release;
+		};
+		OBJ_219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Debug;
+		};
+		OBJ_220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Release;
+		};
+		OBJ_241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/HeliumLogger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HeliumLogger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HeliumLogger;
+			};
+			name = Debug;
+		};
+		OBJ_242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/HeliumLogger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HeliumLogger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HeliumLogger;
+			};
+			name = Release;
+		};
+		OBJ_250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LoggerAPI;
+			};
+			name = Debug;
+		};
+		OBJ_251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Predictable.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LoggerAPI;
+			};
+			name = Release;
+		};
+		OBJ_257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		C81FEDC51FD8490700BA6B97 /* Debug */ = {
+		OBJ_85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FVT8X28ANV;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Predictable/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.op.Predictable;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		C81FEDC61FD8490700BA6B97 /* Release */ = {
+		OBJ_86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FVT8X28ANV;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Predictable/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.op.Predictable;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		C81FEDC81FD8490700BA6B97 /* Debug */ = {
+		OBJ_91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FVT8X28ANV;
-				INFOPLIST_FILE = PredictableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.op.PredictableTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		C81FEDC91FD8490700BA6B97 /* Release */ = {
+		OBJ_92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FVT8X28ANV;
-				INFOPLIST_FILE = PredictableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.op.PredictableTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C81FEDAA1FD8490700BA6B97 /* Build configuration list for PBXProject "Predictable" */ = {
+		OBJ_102 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C81FEDC21FD8490700BA6B97 /* Debug */,
-				C81FEDC31FD8490700BA6B97 /* Release */,
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		C81FEDC41FD8490700BA6B97 /* Build configuration list for PBXNativeTarget "Predictable" */ = {
+		OBJ_108 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C81FEDC51FD8490700BA6B97 /* Debug */,
-				C81FEDC61FD8490700BA6B97 /* Release */,
+				OBJ_109 /* Debug */,
+				OBJ_110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		C81FEDC71FD8490700BA6B97 /* Build configuration list for PBXNativeTarget "PredictableTests" */ = {
+		OBJ_114 /* Build configuration list for PBXNativeTarget "HeliumLoggerPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C81FEDC81FD8490700BA6B97 /* Debug */,
-				C81FEDC91FD8490700BA6B97 /* Release */,
+				OBJ_115 /* Debug */,
+				OBJ_116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_120 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_121 /* Debug */,
+				OBJ_122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_126 /* Build configuration list for PBXNativeTarget "PredictableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_127 /* Debug */,
+				OBJ_128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_153 /* Build configuration list for PBXNativeTarget "Predictable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_154 /* Debug */,
+				OBJ_155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_172 /* Build configuration list for PBXNativeTarget "SwiftyCouchDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_173 /* Debug */,
+				OBJ_174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Predictable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_202 /* Build configuration list for PBXNativeTarget "CodableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_203 /* Debug */,
+				OBJ_204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_211 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_212 /* Debug */,
+				OBJ_213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_218 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_219 /* Debug */,
+				OBJ_220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_240 /* Build configuration list for PBXNativeTarget "HeliumLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_241 /* Debug */,
+				OBJ_242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_249 /* Build configuration list for PBXNativeTarget "LoggerAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_250 /* Debug */,
+				OBJ_251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_256 /* Build configuration list for PBXAggregateTarget "PredictablePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_257 /* Debug */,
+				OBJ_258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_84 /* Build configuration list for PBXNativeTarget "PredictablePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_85 /* Debug */,
+				OBJ_86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_90 /* Build configuration list for PBXNativeTarget "SwiftyCouchDBPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_91 /* Debug */,
+				OBJ_92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_96 /* Build configuration list for PBXNativeTarget "CodableCollectionPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_97 /* Debug */,
+				OBJ_98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C81FEDA71FD8490700BA6B97 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

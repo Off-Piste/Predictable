@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "b8995447518fd57af14c88a47f27434a16f60403",
+          "version": "4.5.1"
+        }
+      },
+      {
+        "package": "CodableCollection",
+        "repositoryURL": "https://github.com/harrytwright/CodableCollection.git",
+        "state": {
+          "branch": "master",
+          "revision": "94c7cdf42fa8fc8265fdd3ac3929d77d23297dd5",
+          "version": null
+        }
+      },
+      {
+        "package": "HeliumLogger",
+        "repositoryURL": "https://github.com/IBM-Swift/HeliumLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "2afeb4c02f5a48a7fbd081fe8607b91eeebd7ecb",
+          "version": "1.7.1"
+        }
+      },
+      {
+        "package": "LoggerAPI",
+        "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "6b62fe66da9b8794d6581e5c341710eea3173cd4",
+          "version": "1.7.1"
+        }
+      },
+      {
+        "package": "SwiftyCouchDB",
+        "repositoryURL": "https://github.com/Off-Piste/SwiftyCouchDB.git",
+        "state": {
+          "branch": "v1",
+          "revision": "af1350c5cd8e4bf92d9cd2f52836da07637a608c",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "1190845cf7d25a5c8ea7653fe03dcdd39a082056",
+          "version": "17.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
