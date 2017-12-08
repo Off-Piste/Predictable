@@ -38,13 +38,9 @@ internal final class Sorter<Key, Value: Comparable>: KeyedSorter<Key> {
 public typealias Evaluation<Key> = ([Key]?, Error?) -> Void
 
 /// <#Description#>
-public final class Query<Key: DBDocument> {
+public final class Query<Key> {
 
     var type: Key.Type
-
-    var design: Database.Design? = nil
-
-    var view: DBDesignView? = nil
 
     var predicates: [Predicate<Key>] = []
 
@@ -55,19 +51,6 @@ public final class Query<Key: DBDocument> {
     /// - Parameter type: <#type description#>
     public init(_ type: Key.Type) {
         self.type = type
-    }
-
-    /// <#Description#>
-    ///
-    /// - Parameters:
-    ///   - design: <#design description#>
-    ///   - view: <#view description#>
-    /// - Returns: <#return value description#>
-    public func `in`(_ design: Database.Design, with view: DBDesignView) -> Query {
-        self.design = design
-        self.view = view
-
-        return self
     }
 
     /// <#Description#>
@@ -107,20 +90,22 @@ public final class Query<Key: DBDocument> {
 
         return sortedDocuments
     }
+}
+
+extension Query where Key: DBDocument {
 
     /// <#Description#>
     ///
     /// - Parameter callback: <#callback description#>
     public func evaluate(
+        decoder: JSONDecoder = JSONDecoder(),
         _ callback: @escaping (Evaluation<Key>)
         )
     {
-        guard let view = self.view, let design = self.design else {
-            callback(nil, predictableError("`in(_:with:)` must be called before `evaluate(_:)`"))
-            return
+        self.type.all(decoder: decoder) { (documents, error) in
+            if let error = error { callback(nil, error); return }
+            callback(self.evaluate(documents!), nil)
         }
-
-        self.evaluate(in: design, with: view, callback)
     }
 
     /// <#Description#>

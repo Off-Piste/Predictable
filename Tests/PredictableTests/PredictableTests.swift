@@ -15,6 +15,7 @@ struct Person: DBDocument, Equatable {
     var _id: String = UUID().uuidString
     var name: String
     var age: Int
+    var pets: [String] = []
 
     init(name: String, age: Int) {
         self.name = name
@@ -27,6 +28,22 @@ struct Person: DBDocument, Equatable {
 
 }
 
+func XCTAssertDoesContain<S: Sequence, Value: Equatable>(
+    _ value: Value,
+    in sequence: S
+    ) where S.Element == Value
+{
+    XCTAssert(sequence.contains(where: { $0 == value }))
+}
+
+func XCTAssertDoesNotContain<S: Sequence, Value: Equatable>(
+    _ value: Value,
+    in sequence: S
+    ) where S.Element == Value
+{
+    XCTAssert(sequence.contains(where: { $0 != value }))
+}
+
 class PredictableTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
@@ -34,11 +51,21 @@ class PredictableTests: XCTestCase {
         // results.
 //        XCTAssertEqual(Predictable().text, "Hello, World!")
 
-        let harry = Person(name: "Harry", age: 21)
+        var harry = Person(name: "Harry", age: 21)
         let rosie = Person(name: "Rosie", age: 20)
+        var paula = Person(name: "Paula", age: 48)
 
-        let queriedResult = Query(Person.self).by(\Person.age).evaluate([harry, rosie])
-        XCTAssertEqual(queriedResult.first, rosie)
+        harry.pets.append("Alfie")
+        paula.pets.append("Alfie")
+
+        let queriedResult = Query(Person.self)
+            .for((30...50) ~> \Person.age, \Person.pets ~> "Alfie")
+            .by(\Person.age)
+            .evaluate([harry, rosie, paula])
+
+        XCTAssertNotEqual(queriedResult.first, rosie)
+        XCTAssertDoesNotContain(rosie, in: queriedResult)
+//        XCTAssertNotCo
 
     }
 

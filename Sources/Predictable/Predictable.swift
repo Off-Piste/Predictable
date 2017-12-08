@@ -7,20 +7,61 @@
 
 import SwiftyCouchDB
 
-open class Predicate<Key: DBDocument> {
+/// <#Description#>
+open class AnyPredicate {
 
-    open func evaluate(with object: Key) -> Bool {
-        fatalError("Please use subclass")
+    /// <#Description#>
+    open var predicteFormat: String {
+        return "Unknown"
     }
 
-    open var predicteFormat: String {
+}
+
+// Keep it pure swift for Linux
+#if !os(Linux)
+
+import Foundation
+
+/// <#Description#>
+final public class OPPredicate: AnyPredicate, ExpressibleByStringLiteral {
+
+    public typealias StringLiteralType = String
+
+    var _nsPredicate: NSPredicate
+
+    init(format: String) {
+        self._nsPredicate = NSPredicate(format: format)
+    }
+
+    public convenience init(stringLiteral value: OPPredicate.StringLiteralType) {
+        self.init(format: value)
+    }
+
+    public override var predicteFormat: String {
+        return _nsPredicate.predicateFormat
+    }
+
+}
+
+#endif
+
+/// <#Description#>
+open class Predicate<Key>: AnyPredicate {
+
+    /// <#Description#>
+    ///
+    /// - Parameter object: <#object description#>
+    /// - Returns: <#return value description#>
+    open func evaluate(with object: Key) -> Bool {
         fatalError("Please use subclass")
     }
 
 }
 
+/// <#Description#>
 public final class ComparablePredicate<Key: DBDocument, Value: Comparable>: Predicate<Key> {
 
+    /// <#Description#>
     public enum Operator: String {
         case lessThan = "<"
         case lessThanOrEqualTo = "<="
@@ -45,6 +86,41 @@ public final class ComparablePredicate<Key: DBDocument, Value: Comparable>: Pred
     public override func evaluate(with object: Key) -> Bool {
         return Bool(object: object, predicate: self)
     }
+}
+
+/// <#Description#>
+public final class RangePredicate<Key: DBDocument, Value, Range: RangeExpression>: Predicate<Key> where Range.Bound == Value {
+
+    internal var keyPath: KeyPath<Key, Value>
+
+    internal var range: Range
+
+    internal init(keyPath: KeyPath<Key, Value>, in range: Range) {
+        self.keyPath = keyPath
+        self.range = range
+    }
+    
+    public override func evaluate(with object: Key) -> Bool {
+        return range.contains(object[keyPath: keyPath])
+    }
+
+}
+
+public final class ContainsPredicate<Key: DBDocument, Value: Sequence, Element: Equatable>: Predicate<Key> where Value.Element == Element {
+
+    internal var keyPath: KeyPath<Key, Value>
+
+    internal var object: Element
+
+    internal init(keyPath: KeyPath<Key, Value>, contains object: Element) {
+        self.keyPath = keyPath
+        self.object = object
+    }
+
+    public override func evaluate(with object: Key) -> Bool {
+        return object[keyPath: keyPath].contains(self.object)
+    }
+
 }
 
 extension Bool {
