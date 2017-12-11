@@ -16,7 +16,7 @@ func check<Key>(_ object: Key, in predicates: [Predicate<Key>]) -> Bool {
     return true
 }
 
-extension Sequence where Element: DBDocument {
+extension Sequence {
 
     func filter(where predicates: [Predicate<Element>]) -> [Element] {
         return self.filter { check($0, in: predicates) }
