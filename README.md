@@ -12,7 +12,7 @@ Predictable is a type-safe [SwiftyCouchDB](https://github.com/Off-Piste/SwiftyCo
 
 > Note: Uses SwiftyCouchDB as the CouchDB Wrapper.
 
-Creating your database document object is simple.
+Creating your database document object is simple, conforming to `DBDocument` ([Codable](https://developer.apple.com/documentation/swift/codable)) is all that is required.
 
 ```swift
 struct User: DBDocument {
@@ -20,8 +20,16 @@ struct User: DBDocument {
   var name: String
   var email: String
   var age: Int
-  var type: String = "user"
 }
 ```
 
-As per with CouchDB you will need to create your design document (`_design/...`)
+To create your query without using CouchDB design documents just:
+
+```swift
+Query(User.self)
+  .for(\User.age > 22)
+  .by(\User.age)
+  .evaluate { (users, error) in
+    /* .. */
+  }
+```
